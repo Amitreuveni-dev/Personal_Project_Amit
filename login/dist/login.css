@@ -52,3 +52,7 @@ main .mainForm {
 main button {
   margin-top: 0.5rem;
 }
+
+.footer-line {
+  text-align: center;
+}

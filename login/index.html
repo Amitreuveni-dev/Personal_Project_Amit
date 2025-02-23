@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
-    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/login.css">
 </head>
+
 <body>
     <main>
         <h1>Sign In</h1>
         <form class="mainForm">
             <label for="UserName">UserName:</label>
-            <div>
-                <input id="UserName" type="text"
-                autofocus
-                required
-                placeholder="amit134!">
-            </div>
+            <input id="UserName" type="text" autofocus required placeholder="amit134!" maxlength="25">
             <label for="password">Password:</label>
-            <div>
-                <input id="password" type="text"
-                required
-                placeholder="123456789">
-            </div>
-            <div class="content">
-                <button>conect</button>
-            </div>
+            <input id="password" type="text" required placeholder="123456789" maxlength="25">
+            <button id="logIn-btn">Log In</button>
+            <article class="sign-up-articale">
+                <p>Don't have an account yet click here to sign up</p>
+                <button>Sign Up</button>
+            </article>
         </form>
     </main>
-    <footer>
+    <footer class="footer-line">
         <p>&copy; All rights reserved 2025</p>
     </footer>
     <script></script>
 </body>
+
 </html>
