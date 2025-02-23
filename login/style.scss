@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    font-size: calc(1rem + 0.5vw);
+    line-height: 1.5;
+}
+
+body {
+    font-family: system-ui;
+}
+
+main {
+    width: min(70ch, 100% - 2rem);
+    margin-inline: auto;
+}
+
+input,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+
+main{
+
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .mainForm{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        margin-top: 0.5rem;
+    }
+    
+}
