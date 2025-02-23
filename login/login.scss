@@ -40,9 +40,6 @@ h1 {
 
 main{
 
-    justify-content: center;
-    align-items: center;
-
     h1{
         margin-bottom: 0.5rem;
         margin-top: 0.5rem;
@@ -55,7 +52,12 @@ main{
         margin-top: 0.5rem;
     }
     
+    .sign-up-articale{
+        text-align: center;
+        margin-top: 0.5rem;
+    }
 }
 .footer-line{
     text-align: center;
+    margin-top: 0.5rem;
 }

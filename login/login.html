@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Login</title>
     <link rel="stylesheet" href="dist/login.css">
 </head>
 
@@ -13,12 +13,15 @@
         <h1>Sign In</h1>
         <form class="mainForm">
             <label for="UserName">UserName:</label>
-            <input id="UserName" type="text" autofocus required placeholder="amit134!" maxlength="25">
+            <input id="UserName" type="text" autofocus required maxlength="25">
             <label for="password">Password:</label>
-            <input id="password" type="text" required placeholder="123456789" maxlength="25">
+            <input id="password" type="text" required maxlength="25">
             <button id="logIn-btn">Log In</button>
             <article class="sign-up-articale">
-                <p>Don't have an account yet click here to sign up</p>
+                <div>
+                    <h2>Don't have an account yet</h2>
+                    <h3>click here to sign up</h3>
+                </div>
                 <button>Sign Up</button>
             </article>
         </form>
