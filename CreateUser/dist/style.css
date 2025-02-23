@@ -35,4 +35,18 @@ ul {
 
 h1 {
   font-size: 1.6rem;
+  text-align: center;
+}
+
+main #sign-up-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+main button {
+  margin-top: 0.5rem;
+}
+
+.footer-line {
+  text-align: center;
 }
