@@ -36,3 +36,24 @@ ul {
 h1 {
   font-size: 1.6rem;
 }
+
+main h1 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+main .mainForm {
+  display: flex;
+  flex-direction: column;
+}
+main button {
+  margin-top: 0.5rem;
+}
+main .sign-up-articale {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.footer-line {
+  text-align: center;
+  margin-top: 0.5rem;
+}
