@@ -1,0 +1,16 @@
+$themes: (
+ light: (
+   text: hsl(210, 31%, 5%),
+   background: hsl(216, 33%, 97%),
+   primary: hsl(208, 39%, 52%),
+   secondary: hsl(208, 45%, 75%),
+   accent: hsl(208, 51%, 62%),
+ ),
+ dark: (
+   text: hsl(210, 31%, 95%),
+   background: hsl(216, 33%, 3%),
+   primary: hsl(208, 39%, 48%),
+   secondary: hsl(207, 45%, 25%),
+   accent: hsl(208, 51%, 38%),
+ ),
+);
