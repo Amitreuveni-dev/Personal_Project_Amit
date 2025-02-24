@@ -1,0 +1,19 @@
+main {
+  width: min(70ch, 100% - 2rem);
+  margin-inline: auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.mainForm {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,18 @@
+main {
+    width: min(70ch, 100% - 2rem);
+    margin-inline: auto;
+}
+
+#sign-up-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+#sign-up-form button{
+    margin-top: 0.5rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+    text-align: center;
+}

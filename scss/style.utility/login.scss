@@ -14,3 +14,14 @@ $themes: (
    accent: hsl(208, 51%, 38%),
  ),
 );
+
+input,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

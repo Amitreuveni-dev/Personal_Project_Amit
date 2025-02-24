@@ -1,0 +1,10 @@
+input,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

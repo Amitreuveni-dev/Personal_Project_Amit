@@ -1,0 +1,24 @@
+.headaing-base {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer button {
+  margin-left: 1rem;
+}
+
+#user-profile,
+#schedule,
+#user-grades,
+#about-us {
+  margin-top: 1rem;
+}
