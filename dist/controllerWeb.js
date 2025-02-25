@@ -1,6 +1,6 @@
 import { createStudent } from "./modelWeb.js";
 const studentStoregedKey = "students";
-const loginButton = document.getElementById("login-btn");
+export const loginButton = document.getElementById("login-btn");
 loginButton?.addEventListener("click", (e) => {
     e.preventDefault();
     const userNameInput = document.getElementById("UserName").value;
@@ -18,12 +18,12 @@ loginButton?.addEventListener("click", (e) => {
         window.location.href = "webSchool.html";
     }
 });
-const signUpButtonFromLogin = document.getElementById("sign-up-button");
+export const signUpButtonFromLogin = document.getElementById("sign-up-button");
 signUpButtonFromLogin?.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.href = "createUser.html";
 });
-const createUserButton = document.getElementById("create-user-button");
+export const createUserButton = document.getElementById("create-user-button");
 createUserButton?.addEventListener("click", (e) => {
     e.preventDefault();
     const username = document.getElementById("username").value;

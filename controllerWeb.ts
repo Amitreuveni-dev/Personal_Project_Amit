@@ -2,7 +2,7 @@ import { Student, createStudent } from "./modelWeb.js";
 
 const studentStoregedKey = "students";
 
-const loginButton = document.getElementById("login-btn");
+export const loginButton = document.getElementById("login-btn");
 loginButton?.addEventListener("click", (e: Event) => {
     e.preventDefault();
 
@@ -26,14 +26,14 @@ loginButton?.addEventListener("click", (e: Event) => {
 
 
 });
-const signUpButtonFromLogin = document.getElementById("sign-up-button");
+export const signUpButtonFromLogin = document.getElementById("sign-up-button");
 signUpButtonFromLogin?.addEventListener("click", (e: Event) => {
     e.preventDefault();
     window.location.href = "createUser.html";
 });
 
 
-const createUserButton = document.getElementById("create-user-button");
+export const createUserButton = document.getElementById("create-user-button");
 createUserButton?.addEventListener("click", (e: Event) => {
     e.preventDefault();
 
