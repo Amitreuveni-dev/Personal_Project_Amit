@@ -2,6 +2,10 @@ import { Student, createStudent } from "./modelWeb.js";
 
 const studentStoregedKey = "students";
 
+
+// login and create user case : 
+
+
 export const loginButton = document.getElementById("login-btn");
 loginButton?.addEventListener("click", (e: Event) => {
     e.preventDefault();
@@ -61,3 +65,24 @@ createUserButton?.addEventListener("click", (e: Event) => {
 
     window.location.href = "login.html";
 });
+
+// profile case :
+
+export const showUserProfile = () => {
+    const userProfileInfoDiv = document.getElementById("user-profile-info")!;
+    const savedUsers: Student[] = JSON.parse(localStorage.getItem(studentStoregedKey) || '[]');
+    const currentUser = savedUsers.find(user => user.username === localStorage.getItem('currentUser'));
+
+    if (!currentUser) {
+        userProfileInfoDiv.textContent = "No user found";
+    } else {
+        userProfileInfoDiv.textContent =
+        `Username: ${currentUser.username},
+        First Name: ${currentUser.firstName},
+        Last Name: ${currentUser.lastName},
+        Email: ${currentUser.email},
+        Phone: ${currentUser.phone},
+        Birthdate: ${currentUser.birthdate}`;
+    }
+};
+
