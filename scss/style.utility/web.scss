@@ -59,41 +59,71 @@
   --accent-900: hsl(101, 37%, 10%);
   --accent-950: hsl(102, 38%, 5%);
 
-};
+}
+
+;
 
 input,
 button {
-    font-size: inherit;
-    font-family: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 h1 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+  color: var(--text-900);
 }
 
-.heading-base{
+h2 {
+  color: var(--text-800);
+}
+
+p {
+  color: var(--text-950);
+}
+
+.heading-base {
   background: var(--background-700);
 }
 
-body{
+body {
+  min-height: 100vh;
   background: var(--primary-400);
 }
 
-.baseline-footer{
+.baseline-footer {
+  margin-top: auto;
   background: var(--background-600);
 }
 
-button{
+button {
   background-color: var(--background-200);
 }
-button:hover{
-  background-color: var(--background-100);   
+
+button:hover {
+  background-color: var(--background-100);
 }
-button:active{
+
+button:active {
   background-color: var(--background-300);
+}
+
+.schedule {
+  display: none;
+  padding: 2rem;
+  background-color: var(--background-700);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+#schedule-list{
+  font-size: 1.2rem;
+  padding: 1rem;
 }

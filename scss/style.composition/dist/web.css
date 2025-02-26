@@ -22,12 +22,18 @@ body {
   text-align: center;
 }
 
+.main-paragraph {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 #user-profile-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 1rem;
+  flex-shrink: 0;
 }
 
 #user-profile-info p {
@@ -35,18 +41,18 @@ body {
   gap: 1rem;
 }
 
+#user-profile-info h3 {
+  padding: 1rem;
+}
+
 #user-profile-info input {
   margin: 0.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 400px;
 }
 
 #user-profile-info button {
   margin: 0.5rem;
+  align-items: center;
 }
 
 button {
@@ -59,4 +65,10 @@ button {
 
 button:hover {
   transform: scale(1.05);
+}
+
+.schedule h3 {
+  font-size: 1.5rem;
+  color: var(--text-600);
+  margin-bottom: 1rem;
 }

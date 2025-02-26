@@ -69,6 +69,15 @@ ul {
 
 h1 {
   font-size: 1.6rem;
+  color: var(--text-900);
+}
+
+h2 {
+  color: var(--text-800);
+}
+
+p {
+  color: var(--text-950);
 }
 
 .heading-base {
@@ -76,10 +85,12 @@ h1 {
 }
 
 body {
+  min-height: 100vh;
   background: var(--primary-400);
 }
 
 .baseline-footer {
+  margin-top: auto;
   background: var(--background-600);
 }
 
@@ -93,4 +104,19 @@ button:hover {
 
 button:active {
   background-color: var(--background-300);
+}
+
+.schedule {
+  display: none;
+  padding: 2rem;
+  background-color: var(--background-700);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+#schedule-list {
+  font-size: 1.2rem;
+  padding: 1rem;
 }

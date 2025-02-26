@@ -49,11 +49,28 @@ createUserButton?.addEventListener("click", (e) => {
     localStorage.setItem(studentStoregedKey, JSON.stringify(savedUsers));
     window.location.href = "login.html";
 });
-// profile case :
+// click on profile edit profile close profile case :
 export const cilckOnProfile = document.getElementById("profile-btn");
 cilckOnProfile?.addEventListener("click", (e) => {
     e.preventDefault();
-    showUserProfile();
+    const userProfileInfo = document.getElementById("user-profile-btn");
+    const scheduleElement = document.getElementById("schedule");
+    const gradesElement = document.getElementById("user-grades");
+    const aboutUsElement = document.getElementById("about-us");
+    if (scheduleElement?.style.display === "block") {
+        scheduleElement.style.display = "none";
+        cilckOnSchedule.textContent = "schedule";
+    }
+    if (userProfileInfo?.style.display === "block") {
+        userProfileInfo.style.display = "none";
+    }
+    else {
+        if (gradesElement)
+            gradesElement.style.display = "none";
+        if (aboutUsElement)
+            aboutUsElement.style.display = "none";
+        showUserProfile();
+    }
 });
 export const showUserProfile = () => {
     const userProfileInfo = document.getElementById("user-profile-info");
@@ -65,7 +82,8 @@ export const showUserProfile = () => {
         return;
     }
     const currentUser = savedUsers.find(user => user.username === localStorage.getItem("currentUser"));
-    if (!userProfileInfo && !currentUser) {
+    if (!currentUser) {
+        console.log("User not found");
         return;
     }
     userProfileInfo.textContent = '';
@@ -92,22 +110,8 @@ export const showUserProfile = () => {
     closeProfileButton.textContent = "Close profile";
     userProfileInfo.appendChild(closeProfileButton);
     closeProfileButton?.addEventListener("click", () => {
-        const closeProfile = document.getElementById("user-profile-info");
-        if (closeProfile) {
-            closeProfile.style.display = "none";
-        }
-        const scheduleElement = document.getElementById("schedule");
-        const gradesElement = document.getElementById("user-grades");
-        const aboutUsElement = document.getElementById("about-us");
-        if (scheduleElement) {
-            scheduleElement.style.display = "block";
-        }
-        if (gradesElement) {
-            gradesElement.style.display = "block";
-        }
-        if (aboutUsElement) {
-            aboutUsElement.style.display = "block";
-        }
+        userProfileInfo.style.display = "none";
+        showSchedule();
     });
 };
 export const editUserProfile = (currentUser, savedUsers) => {
@@ -131,7 +135,7 @@ export const editUserProfile = (currentUser, savedUsers) => {
         birthdateInput.value = currentUser.birthdate;
         userProfileDiv.append("First Name: ", firstNameInput, "Last Name: ", lastNameInput, "Email: ", emailInput, "Phone: ", phoneInput, "Birthdate: ", birthdateInput);
         const closeEditButton = document.createElement("button");
-        closeEditButton.textContent = "Cancel Edit";
+        closeEditButton.textContent = "Go back";
         userProfileDiv.appendChild(closeEditButton);
         closeEditButton.addEventListener("click", (e) => {
             showUserProfile();
@@ -161,4 +165,52 @@ export const editUserProfile = (currentUser, savedUsers) => {
             showUserProfile();
         });
     }
+};
+// schedule case :
+export const cilckOnSchedule = document.getElementById("schedule-btn");
+cilckOnSchedule?.addEventListener("click", (e) => {
+    e.preventDefault();
+    const scheduleElement = document.getElementById("schedule");
+    const userProfileInfo = document.getElementById("user-profile-btn");
+    if (scheduleElement?.style.display === "block") {
+        scheduleElement.style.display = "none";
+        cilckOnSchedule.textContent = "Schedule";
+    }
+    else {
+        scheduleElement.style.display = "block";
+        cilckOnSchedule.textContent = "Close Schedule";
+    }
+    showSchedule();
+});
+export const showSchedule = () => {
+    const schedule = document.getElementById("schedule");
+    const scheduleElement = document.getElementById("schedule");
+    const userProfileInfo = document.getElementById("user-profile-btn");
+    if (schedule) {
+        schedule.textContent = "";
+    }
+    else {
+        if (userProfileInfo) {
+            userProfileInfo.style.display = "none";
+        }
+        scheduleElement.style.display = "block";
+        cilckOnSchedule.textContent = "Close Schedule";
+    }
+    const scheduleData = [
+        "Monday: Math, English, History",
+        "Tuesday: Science, Art, Physical Education",
+        "Wednesday: Math, Geography, Music",
+        "Thursday: Chemistry, English, Literature",
+        "Friday: History, Physical Education"
+    ];
+    const title = document.createElement("h3");
+    title.textContent = "Schedule for the Week";
+    schedule.appendChild(title);
+    const ul = document.createElement("ul");
+    scheduleData.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ul.appendChild(li);
+    });
+    schedule.appendChild(ul);
 };
