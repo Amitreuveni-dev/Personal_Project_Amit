@@ -76,5 +76,24 @@ h1 {
     font-size: 1.6rem;
 }
 
-.navigation-bar{
+.heading-base{
+  background: var(--background-700);
+}
+
+body{
+  background: var(--primary-100);
+}
+
+.baseline-footer{
+  background: var(--background-600);
+}
+
+button{
+  background-color: var(--background-200);
+}
+button:hover{
+  background-color: var(--background-100);   
+}
+button:active{
+  background-color: var(--background-300);
 }

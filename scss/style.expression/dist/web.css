@@ -4,7 +4,6 @@
 
 footer {
   text-align: center;
-  margin-top: 1rem;
 }
 
 footer ul {
@@ -12,8 +11,8 @@ footer ul {
   justify-content: center;
 }
 
-footer button {
-  margin-left: 1rem;
+.footer-info {
+  margin-inline: 0.5rem;
 }
 
 #user-profile,
