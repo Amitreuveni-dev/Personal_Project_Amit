@@ -86,3 +86,8 @@ export const showUserProfile = () => {
     }
 };
 
+export const cilckOnProfile = document.getElementById("profile-btn");
+cilckOnProfile?.addEventListener("click", (e:Event) => {
+    e.preventDefault();
+    showUserProfile();
+});

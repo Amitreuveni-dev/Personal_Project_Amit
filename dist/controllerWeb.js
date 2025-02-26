@@ -65,3 +65,8 @@ export const showUserProfile = () => {
         Birthdate: ${currentUser.birthdate}`;
     }
 };
+export const cilckOnProfile = document.getElementById("profile-btn");
+cilckOnProfile?.addEventListener("click", (e) => {
+    e.preventDefault();
+    showUserProfile();
+});
