@@ -10,3 +10,7 @@ footer ul {
 .footer-info {
   margin-inline: 0.5rem;
 }
+
+.footer-info button {
+  margin: 0.2rem;
+}
