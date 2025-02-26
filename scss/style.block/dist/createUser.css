@@ -17,3 +17,13 @@ h1 {
   font-size: 1.6rem;
   text-align: center;
 }
+
+.main-form {
+  height: 100vh;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

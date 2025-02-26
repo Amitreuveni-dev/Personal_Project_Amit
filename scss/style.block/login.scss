@@ -7,13 +7,18 @@ h1 {
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
+    text-align: center;
 }
 
 .mainForm{
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
-button{
-    margin-top: 0.5rem;
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+

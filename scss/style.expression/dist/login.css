@@ -1,9 +1,18 @@
 .sign-up-articale {
   text-align: center;
   margin-top: 0.5rem;
+  height: 50vh;
 }
 
-.footer-line {
+footer {
   text-align: center;
-  margin-top: 0.5rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info {
+  margin-inline: 0.5rem;
 }

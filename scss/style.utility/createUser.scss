@@ -73,3 +73,20 @@ ul {
     padding: 0;
 }
 
+body{
+  background-color: var(--primary-400);
+}
+
+.baseline-footer{
+  background: var(--background-600);
+}
+
+button{
+  background-color: var(--background-100);
+}
+button:hover{
+  background-color: var(--background-200);   
+}
+button:active{
+  background-color: var(--background-300);
+}
