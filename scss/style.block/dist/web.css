@@ -12,6 +12,11 @@ header {
   justify-content: space-between;
 }
 
+.navigation-bar img {
+  width: 40px;
+  height: 40px;
+}
+
 .navigation-bar ul {
   display: flex;
 }

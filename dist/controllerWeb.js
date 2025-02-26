@@ -15,7 +15,7 @@ loginButton?.addEventListener("click", (e) => {
         alert("Invalid user name or password");
     }
     else {
-        window.location.href = "webSchool.html";
+        window.location.href = "schoolWeb.html";
     }
 });
 export const signUpButtonFromLogin = document.getElementById("sign-up-button");

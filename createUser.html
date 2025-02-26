@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <a href="login.html" target="_blank">
+        <a href="login.html">
             <button>Go back</button>
         </a>
         <h1>Create your user</h1>
@@ -41,7 +41,7 @@
             <label for="birthdate">Birthdate:</label>
             <input type="date" id="birthdate" name="birthdate" required>
 
-            <button id="create-user-button" type="submit">Create Account</button>
+            <button id="create-user-button" type="button">Create Account</button>
         </form>
     </main>
     <footer class="footer-line">
@@ -49,7 +49,7 @@
     </footer>
 
     <script type="module">
-        
+        import { loginButton, signUpButtonFromLogin, createUserButton } from "./dist/controllerWeb.js"
     </script>
 </body>
 

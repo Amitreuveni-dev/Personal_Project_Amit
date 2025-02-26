@@ -1,3 +1,61 @@
+:root {
+  --text-50: hsl(54, 38%, 95%);
+  --text-100: hsl(49, 41%, 90%);
+  --text-200: hsl(51, 39%, 80%);
+  --text-300: hsl(50, 40%, 70%);
+  --text-400: hsl(50, 40%, 60%);
+  --text-500: hsl(50, 40%, 50%);
+  --text-600: hsl(50, 40%, 40%);
+  --text-700: hsl(50, 40%, 30%);
+  --text-800: hsl(51, 39%, 20%);
+  --text-900: hsl(49, 41%, 10%);
+  --text-950: hsl(48, 38%, 5%);
+  --background-50: hsl(60, 31%, 95%);
+  --background-100: hsl(60, 33%, 90%);
+  --background-200: hsl(60, 33%, 80%);
+  --background-300: hsl(60, 33%, 70%);
+  --background-400: hsl(60, 33%, 60%);
+  --background-500: hsl(60, 33%, 50%);
+  --background-600: hsl(60, 33%, 40%);
+  --background-700: hsl(60, 33%, 30%);
+  --background-800: hsl(60, 33%, 20%);
+  --background-900: hsl(60, 33%, 10%);
+  --background-950: hsl(60, 31%, 5%);
+  --primary-50: hsl(54, 38%, 95%);
+  --primary-100: hsl(51, 37%, 90%);
+  --primary-200: hsl(51, 39%, 80%);
+  --primary-300: hsl(51, 39%, 70%);
+  --primary-400: hsl(51, 39%, 60%);
+  --primary-500: hsl(51, 39%, 50%);
+  --primary-600: hsl(51, 39%, 40%);
+  --primary-700: hsl(51, 39%, 30%);
+  --primary-800: hsl(51, 39%, 20%);
+  --primary-900: hsl(51, 37%, 10%);
+  --primary-950: hsl(48, 38%, 5%);
+  --secondary-50: hsl(90, 38%, 95%);
+  --secondary-100: hsl(92, 37%, 90%);
+  --secondary-200: hsl(92, 39%, 80%);
+  --secondary-300: hsl(92, 39%, 70%);
+  --secondary-400: hsl(92, 39%, 60%);
+  --secondary-500: hsl(92, 39%, 50%);
+  --secondary-600: hsl(92, 39%, 40%);
+  --secondary-700: hsl(92, 39%, 30%);
+  --secondary-800: hsl(92, 39%, 20%);
+  --secondary-900: hsl(92, 37%, 10%);
+  --secondary-950: hsl(96, 38%, 5%);
+  --accent-50: hsl(102, 38%, 95%);
+  --accent-100: hsl(101, 37%, 90%);
+  --accent-200: hsl(100, 39%, 80%);
+  --accent-300: hsl(101, 39%, 70%);
+  --accent-400: hsl(101, 39%, 60%);
+  --accent-500: hsl(101, 39%, 50%);
+  --accent-600: hsl(101, 39%, 40%);
+  --accent-700: hsl(101, 39%, 30%);
+  --accent-800: hsl(101, 39%, 20%);
+  --accent-900: hsl(101, 37%, 10%);
+  --accent-950: hsl(102, 38%, 5%);
+}
+
 input,
 button {
   font-size: inherit;

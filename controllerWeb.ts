@@ -21,7 +21,7 @@ loginButton?.addEventListener("click", (e: Event) => {
     if (!user) {
         alert("Invalid user name or password");
     } else {
-        window.location.href = "webSchool.html";
+        window.location.href = "schoolWeb.html";
     }
 
 
